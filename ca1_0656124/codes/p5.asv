@@ -1,0 +1,12 @@
+clear all
+
+x0=linspace(-5,5);
+y0=x0*0;
+y=linspace(0,1);
+x=sqrt(y);
+hold on;
+plot(x0,y0,x,y);
+grid on ;
+axis ( [ -5 , 5 , -5 , 5 , -5 , 5 ] );
+area(x0,y0,'y',-5);
+area(x,y,-5);
